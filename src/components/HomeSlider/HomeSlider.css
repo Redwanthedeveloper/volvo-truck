@@ -1,0 +1,95 @@
+.slider {
+  width: 100%;
+  height: 100vh !important;
+}
+.slider_content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+}
+.slider_title {
+  font-size: 3.5rem;
+  font-family: 'Bebas Neue';
+  width: 30%;
+  color: #fff;
+  font-weight: 500;
+}
+.slider_description {
+  font-size: 1rem;
+  color: #fff;
+  width: 50%;
+  font-family: 'Open Sans';
+}
+.btn_line {
+  width: 50px;
+  height: 2px;
+  background: #b73243;
+}
+.btn {
+  text-decoration: none;
+  color: #b73243;
+  font-weight: 600;
+  font-family: 'Open Sans';
+  font-size: 1rem;
+}
+.btn_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.slider a.previousButton,
+.slider a.nextButton,
+a svg polygon {
+  background: #b73243;
+  position: absolute;
+  left: 98% !important;
+  fill: #fff !important;
+  border-radius: 8px;
+}
+
+.slider a.previousButton {
+  bottom: 100px !important;
+  position: absolute !important;
+  top: auto !important;
+}
+
+/* Responsive CSS */
+@media (min-width: 768px) and (max-width: 991px) {
+  .slider_title {
+    font-size: 3rem;
+    margin: 1rem 0;
+    width: 50%;
+  }
+  .slider_description {
+    width: 70%;
+  }
+  .slider a.previousButton,
+  .slider a.nextButton,
+  a svg polygon {
+    left: 97% !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .slider_title {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+  }
+  .slider_description {
+    width: 100%;
+    text-align: center;
+  }
+  .slider a.previousButton,
+  .slider a.nextButton,
+  a svg polygon {
+    left: 96% !important;
+  }
+  .btn_wrapper {
+    justify-content: center;
+  }
+}
