@@ -1,4 +1,4 @@
-export default [
+const content = [
   {
     title: 'Escape the ordinary',
     description:
@@ -14,3 +14,5 @@ export default [
     image: '/assets/images/slider2.jpg',
   },
 ];
+
+export default content;
